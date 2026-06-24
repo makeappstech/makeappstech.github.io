@@ -1,43 +1,199 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>MAKEAPPS SOFTWARE SOLUTIONS</title>
-<style>
-body{
-margin:0;font-family:Arial;
-background:#0f172a;color:white;
-overflow-x:hidden;
-}
-header{text-align:center;padding:40px;background:#111827;}
-.card{background:#1f2937;margin:15px;padding:20px;border-radius:12px;transition:0.3s;}
-.card:hover{transform:scale(1.05);}
-.whatsapp{
-position:fixed;bottom:20px;right:20px;
-background:#25D366;padding:15px;border-radius:50%;
-text-decoration:none;color:white;
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="MakeAppsTech - App Development, Web Development, SEO, SMO & Digital Marketing Company" />
+  <meta name="keywords" content="App Development, Web Development, SEO, SMO, Kotlin, Java, Firebase, PHP, MySQL" />
+  <title>MakeAppsTech | App & Web Development Company</title>
+
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
+    body{color:#222;line-height:1.6;background:#f5f7fb;}
+
+    header{
+      background:linear-gradient(135deg,#0f172a,#2563eb);
+      color:#fff;
+      padding:80px 20px;
+      text-align:center;
+    }
+    header h1{font-size:42px;margin-bottom:10px;}
+    header p{font-size:18px;opacity:.9;}
+
+    .btn{
+      display:inline-block;
+      margin-top:20px;
+      padding:12px 24px;
+      background:#fff;
+      color:#0f172a;
+      border-radius:6px;
+      font-weight:bold;
+      text-decoration:none;
+    }
+
+    nav{
+      background:#111827;
+      padding:12px;
+      text-align:center;
+      position:sticky;
+      top:0;
+    }
+    nav a{
+      color:#fff;
+      margin:0 12px;
+      text-decoration:none;
+      font-size:15px;
+    }
+
+    section{
+      padding:60px 20px;
+      max-width:1100px;
+      margin:auto;
+    }
+
+    h2{
+      text-align:center;
+      margin-bottom:30px;
+      color:#0f172a;
+      font-size:28px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+    }
+
+    .card{
+      background:#fff;
+      padding:20px;
+      border-radius:12px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.08);
+      transition:.3s;
+    }
+
+    .card:hover{transform:translateY(-5px);}
+
+    .cta{
+      background:#2563eb;
+      color:#fff;
+      text-align:center;
+      padding:60px 20px;
+      border-radius:12px;
+    }
+
+    footer{
+      background:#0f172a;
+      color:#fff;
+      text-align:center;
+      padding:20px;
+      margin-top:40px;
+    }
+  </style>
 </head>
+
 <body>
 
 <header>
-<h1>MAKEAPPS SOFTWARE SOLUTIONS</h1>
-<p>We design & develop digital products</p>
+  
+  <h1>MAKEAPPS SOFTWARE SOLUTIONS</h1>
+  <p>We Build Android Apps, Websites & Digital Growth Solutions</p>
+  <a href="#contact" class="btn">Get Free Consultation</a>
 </header>
 
-<div class="card">🌐 Website Development</div>
-<div class="card">📱 Android App Development</div>
-<div class="card">⚙ Software Development</div>
+<nav>
+  <a href="#services">Services</a>
+  <a href="#technologies">Technologies</a>
+  <a href="#why">Why Us</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-<div class="card">
-📧 makeappstech@gmail.com<br>
-📞 +91 7378163491
-</div>
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="grid">
 
-<a class="whatsapp" href="https://wa.me/917378163491">💬</a>
+    <div class="card">
+      <h3>📱 Android App Development</h3>
+      <p>High-performance Android apps using Kotlin, Java, Jetpack Compose & Firebase.</p>
+    </div>
+
+    <div class="card">
+      <h3>🌐 Website Development</h3>
+      <p>Modern responsive websites using HTML, CSS, JavaScript, PHP & MySQL.</p>
+    </div>
+
+    <div class="card">
+      <h3>📈 Digital Marketing</h3>
+      <p>SEO, SMO, Google ranking, lead generation & social media marketing.</p>
+    </div>
+
+    <div class="card">
+      <h3>🎨 UI/UX Design</h3>
+      <p>Clean, modern and user-friendly interface design for apps and websites.</p>
+    </div>
+
+    <div class="card">
+      <h3>⚙️ Maintenance</h3>
+      <p>Bug fixing, updates, performance optimization & long-term support.</p>
+    </div>
+
+    <div class="card">
+      <h3>💡 Custom Software</h3>
+      <p>Business automation tools and custom software solutions.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="technologies">
+  <h2>Technologies We Use</h2>
+  <div class="grid">
+
+    <div class="card">
+      <h3>Mobile</h3>
+      <p>Kotlin, Java, Jetpack Compose, Firebase</p>
+    </div>
+
+    <div class="card">
+      <h3>Web</h3>
+      <p>HTML, CSS, JavaScript, PHP, MySQL</p>
+    </div>
+
+    <div class="card">
+      <h3>Marketing</h3>
+      <p>SEO Tools, Google Analytics, Meta Ads</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="why">
+  <h2>Why Choose Us</h2>
+  <div class="grid">
+    <div class="card">✔ Experienced Development Team</div>
+    <div class="card">✔ Affordable Pricing</div>
+    <div class="card">✔ Fast Delivery</div>
+    <div class="card">✔ 100% Client Satisfaction</div>
+    <div class="card">✔ Modern Technology Stack</div>
+    <div class="card">✔ Full Support & Maintenance</div>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Have a Project in Mind?</h2>
+  <p>Let’s build your app or website and grow your business online.</p>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p style="text-align:center;">📧 Email: makeappstech@gmail.com</p>
+  <p style="text-align:center;">📞 Phone: +91 7378163491</p>
+</section>
+
+<footer>
+  <p>© 2026 MakeAppsTech. All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>
-
