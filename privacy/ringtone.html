@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+        <title>Privacy Policy • All HD Video Player</title>
+        <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f4f7fc;
+      font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      color: #1e293b;
+      line-height: 1.7;
+      font-size: 17px; /* increased base font size */
+      letter-spacing: 0.01em;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* attractive gradient header with larger text */
+    .header {
+      background: linear-gradient(135deg, #0b2b5e 0%, #0f3b7a 40%, #1565c0 100%);
+      color: white;
+      padding: 70px 24px 65px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0,32,78,0.15);
+    }
+
+    .header::before {
+      content: "";
+      position: absolute;
+      top: -60px;
+      right: -60px;
+      width: 260px;
+      height: 260px;
+      background: rgba(255,255,255,0.04);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .header::after {
+      content: "";
+      position: absolute;
+      bottom: -40px;
+      left: -40px;
+      width: 200px;
+      height: 200px;
+      background: rgba(255,255,255,0.03);
+      border-radius: 50%;
+    }
+
+    .header h1 {
+      font-size: 2.9rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 12px;
+      position: relative;
+      z-index: 2;
+      text-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .header p {
+      font-size: 1.4rem;
+      font-weight: 400;
+      opacity: 0.92;
+      position: relative;
+      z-index: 2;
+      background: rgba(255,255,255,0.08);
+      display: inline-block;
+      padding: 8px 28px;
+      border-radius: 40px;
+      backdrop-filter: blur(4px);
+      letter-spacing: 0.3px;
+    }
+
+    /* main container - card with softer shadow and bigger padding */
+    .container {
+      max-width: 1000px;
+      margin: 45px auto;
+      background: #ffffff;
+      padding: 50px 55px;
+      border-radius: 12px;
+      box-shadow: 0 20px 40px rgba(0, 20, 40, 0.08), 0 6px 12px rgba(0,0,0,0.04);
+      transition: all 0.2s ease;
+    }
+
+    /* notice banner with bigger text */
+    .notice {
+      background: #eef4ff;
+      border-left: 8px solid #1565c0;
+      padding: 22px 28px;
+      margin: 10px 0 35px;
+      border-radius: 16px;
+      font-weight: 500;
+      font-size: 1.2rem;
+      color: #0a2c4e;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: linear-gradient(to right, #f0f6ff, #ffffff);
+      box-shadow: 0 2px 8px rgba(21,101,192,0.08);
+    }
+
+    .notice strong {
+      font-weight: 700;
+      color: #0b3b6b;
+      background: #ffffffcc;
+      padding: 4px 14px;
+      border-radius: 24px;
+      font-size: 1.1rem;
+    }
+
+    /* heading styles - larger and more vibrant */
+    h2 {
+      color: #0c3c6b;
+      margin-top: 48px;
+      margin-bottom: 18px;
+      font-size: 1.9rem;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+      position: relative;
+      padding-bottom: 10px;
+    }
+
+    h2::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 65px;
+      height: 4px;
+      background: linear-gradient(to right, #1976d2, #64b5f6);
+      border-radius: 4px;
+    }
+
+    h3 {
+      color: #1e3a5f;
+      margin-top: 32px;
+      margin-bottom: 16px;
+      font-size: 1.5rem;
+      font-weight: 650;
+      letter-spacing: -0.2px;
+    }
+
+    p {
+      margin-bottom: 20px;
+      font-size: 1.1rem;
+      color: #2c3e50;
+    }
+
+    ul {
+      margin: 10px 0 25px 28px;
+      list-style-type: none;
+    }
+
+    li {
+      margin-bottom: 14px;
+      font-size: 1.08rem;
+      position: relative;
+      padding-left: 28px;
+      color: #1e2f40;
+    }
+
+    li::before {
+      content: "●";
+      color: #1976d2;
+      font-weight: bold;
+      position: absolute;
+      left: 4px;
+      font-size: 1.2rem;
+      opacity: 0.8;
+    }
+
+    strong {
+      font-weight: 700;
+      color: #0b2b4f;
+    }
+
+    a {
+      color: #0d47a1;
+      text-decoration: none;
+      font-weight: 600;
+      border-bottom: 1px solid rgba(13,71,161,0.25);
+      transition: all 0.2s;
+    }
+
+    a:hover {
+      color: #1565c0;
+      border-bottom-color: #1565c0;
+      text-decoration: none;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 35px 20px 30px;
+      color: #5f6c80;
+      font-size: 1rem;
+      border-top: 1px solid #e9eef3;
+      margin-top: 25px;
+    }
+
+    /* contact email styling */
+    .contact-email {
+      background: #f5f9ff;
+      padding: 8px 18px;
+      border-radius: 30px;
+      display: inline-block;
+      font-weight: 600;
+    }
+
+    /* responsive adjustments */
+    @media (max-width: 768px) {
+      body {
+        font-size: 16px;
+      }
+
+      .container {
+        margin: 20px 16px;
+        padding: 32px 24px;
+        border-radius: 24px;
+      }
+
+      .header {
+        padding: 55px 20px 50px;
+      }
+
+      .header h1 {
+        font-size: 2.2rem;
+      }
+
+      .header p {
+        font-size: 1.2rem;
+        padding: 6px 22px;
+      }
+
+      h2 {
+        font-size: 1.7rem;
+        margin-top: 38px;
+      }
+
+      h3 {
+        font-size: 1.35rem;
+      }
+
+      .notice {
+        font-size: 1.05rem;
+        padding: 18px 20px;
+      }
+    }
+
+    /* additional attractive card hover for sections */
+    .container ul li {
+      transition: transform 0.1s ease;
+    }
+
+    .container ul li:hover {
+      transform: translateX(4px);
+    }
+  </style>
+    </head>
+    <body>
+
+        <div class="header">
+            <h1>Privacy Policy</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="notice">
+                <strong>Effective Date:</strong> July 20, 2026
+            </div>
+
+            <h2>Introduction</h2>
+            <p>
+                Your privacy is important to us. This Privacy Policy explains
+                how
+                <strong>Shree Ram Ringtone जय श्री राम</strong> ("we", "our", or
+                "us") collects,
+                uses, and protects your information in compliance with
+                applicable privacy
+                laws, including the General Data Protection Regulation (GDPR),
+                California Consumer Privacy Act (CCPA), and Brazilian General
+                Data Protection
+                Law (LGPD).
+            </p>
+            <p>
+                If you have any questions or concerns about this Privacy Policy,
+                please contact us using the information provided at the end of
+                this page.
+            </p>
+
+            <h2>1. Information We Collect</h2>
+            <p>
+                For a better experience while using our application, we may
+                request certain
+                permissions necessary for the app to function properly. Your
+                personal data is
+                not collected directly by us and your media files remain on your
+                device.
+            </p>
+            <p>We may collect the following information:</p>
+            <ul>
+                <li><strong>Device Information</strong> – Device model, Android
+                    version, language, and unique device identifiers.</li>
+                <li><strong>App Usage Information</strong> – Anonymous usage
+                    statistics that help improve app performance.</li>
+                <li><strong>Crash Reports</strong> – Diagnostic information used
+                    to fix bugs and improve stability.</li>
+                <li><strong>Permissions</strong> – Storage and media permissions
+                    required to access your local audio files.</li>
+            </ul>
+
+            <h2>2. Legal Basis for Data Collection (GDPR)</h2>
+            <p>We process data under the following legal bases:</p>
+            <ul>
+                <li>Consent provided by the user.</li>
+                <li>Contractual necessity to deliver app functionality.</li>
+                <li>Legitimate interests to improve performance and user
+                    experience.</li>
+            </ul>
+
+            <h2>3. Permissions Requested</h2>
+            <p>To provide all features, the application may request the
+                following permissions:</p>
+            <ul>
+                <li><strong>INTERNET</strong> – Required to load network
+                    resources and display advertisements.</li>
+                <li><strong>ACCESS_NETWORK_STATE</strong> – Checks network
+                    connectivity for ad loading and online features.</li>
+                <li><strong>ACCESS_WIFI_STATE</strong> – Optimizes performance
+                    based on Wi-Fi availability.</li>
+                <li><strong>AD_ID</strong> – Used by Google AdMob to display
+                    personalized advertisements.</li>
+                <li><strong>READ_MEDIA_AUDIO</strong> – Access audio/music files
+                    stored on your device to create ringtones (Android
+                    13+).</li>
+                <li><strong>WRITE_EXTERNAL_STORAGE</strong> – Save custom
+                    ringtones and manage audio files on your device (up to
+                    Android 12).</li>
+                <li><strong>READ_EXTERNAL_STORAGE</strong> – Read audio files
+                    from your device to create and preview ringtones (up to
+                    Android 12).</li>
+                <li><strong>WRITE_SETTINGS</strong> – Required to set custom
+                    audio files as device ringtone, notification sound, or alarm
+                    tone.</li>
+            </ul>
+
+            <h2>4. How We Use Your Information</h2>
+            <p>Information is used for the following purposes:</p>
+            <ul>
+                <li>To play audio and music files stored on your device.</li>
+                <li>To create custom ringtones, notification sounds, and alarm
+                    tones from your audio files.</li>
+                <li>To set audio files as device ringtone, notification sound,
+                    or alarm tone.</li>
+                <li>To organize and manage your audio library.</li>
+                <li>To provide background audio playback.</li>
+                <li>To improve application performance and stability.</li>
+                <li>To display personalized advertisements through Google
+                    AdMob.</li>
+                <li>To fix bugs and improve user experience.</li>
+                <li>To optimize network usage and performance.</li>
+            </ul>
+
+            <h2>5. Advertising</h2>
+            <p>
+                Our application uses <strong>Google AdMob</strong> to display
+                advertisements.
+                AdMob may collect device identifiers, advertising IDs, and usage
+                information
+                to provide personalized and non-personalized ads according to
+                Google's
+                Privacy Policy.
+            </p>
+
+            <h2>6. Data Sharing</h2>
+            <p>
+                We do not sell, rent, or trade your personal information.
+                However, anonymous usage information may be shared with trusted
+                third-party
+                services such as Google AdMob, Firebase Analytics, and Firebase
+                Crashlytics
+                to improve application quality.
+            </p>
+
+            <h2>7. Data Security</h2>
+            <p>
+                We implement appropriate technical and organizational measures
+                to protect your
+                information against unauthorized access, alteration, disclosure,
+                or destruction.
+                However, no method of electronic transmission or storage is
+                completely secure.
+            </p>
+
+            <h2>8. User Choices</h2>
+            <p>
+                You may deny requested permissions at any time through your
+                device settings.
+                Please note that some features of the application may not
+                function correctly
+                without the required permissions.
+            </p>
+
+            <h2>9. Children's Privacy</h2>
+            <p>
+                Our services are not intended for children under the age of 13.
+                We do not knowingly collect personal information from children.
+                If we discover that such information has been provided, it will
+                be deleted promptly.
+            </p>
+
+            <h2>10. Your Rights</h2>
+
+            <h3>GDPR (European Union)</h3>
+            <ul>
+                <li>Right to access your information.</li>
+                <li>Right to correct inaccurate information.</li>
+                <li>Right to delete your information.</li>
+                <li>Right to data portability.</li>
+                <li>Right to withdraw consent.</li>
+                <li>Right to lodge a complaint with your local supervisory
+                    authority.</li>
+            </ul>
+
+            <h3>CCPA (California Residents)</h3>
+            <ul>
+                <li>Request access to collected information.</li>
+                <li>Request deletion of personal information.</li>
+                <li>Opt out of data collection where applicable.</li>
+                <li>We do not sell your personal information.</li>
+            </ul>
+
+            <h3>LGPD (Brazil)</h3>
+            <ul>
+                <li>Confirm whether your data is processed.</li>
+                <li>Access your personal information.</li>
+                <li>Correct or delete your information.</li>
+                <li>Withdraw consent at any time.</li>
+            </ul>
+
+            <h2>11. Data Retention</h2>
+            <p>
+                We retain only the minimum information necessary to provide app
+                functionality,
+                comply with legal obligations, and improve our services.
+                Most media files remain entirely on your device.
+            </p>
+
+            <h2>12. International Data Transfers</h2>
+            <p>
+                Some third-party service providers may process data outside your
+                country.
+                Where applicable, appropriate safeguards are implemented to
+                protect your information.
+            </p>
+
+            <h2>13. Third-Party Service Providers</h2>
+            <p>The application may use trusted third-party services
+                including:</p>
+            <ul>
+                <li>Google Play Services</li>
+                <li>Google AdMob</li>
+                <li>Firebase Analytics</li>
+                <li>Firebase Crashlytics</li>
+            </ul>
+
+            <h2>14. Changes to This Privacy Policy</h2>
+            <p>
+                We may update this Privacy Policy from time to time.
+                Any modifications will be posted on this page with a revised
+                effective date.
+                Continued use of the application after updates constitutes
+                acceptance of the updated Privacy Policy.
+            </p>
+
+            <h2>15. Contact Us</h2>
+            <p>
+                If you have any questions regarding this Privacy Policy or wish
+                to exercise
+                your privacy rights, please contact us:
+            </p>
+            <p style="margin-top: 18px;">
+                <strong>Email:</strong><br>
+                <span class="contact-email">
+                    <a href="mailto:makeappstech@gmail.com"
+                        style="border-bottom: none; font-size: 1.15rem;">
+                        ✉️ makeappstech@gmail.com
+                    </a>
+                </span>
+            </p>
+        </div>
+
+        <div class="footer">
+            © 2026 All HD Video Player. Privacy matters.
+        </div>
+
+    </body>
+</html>
