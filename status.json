@@ -1,5 +1,5 @@
 {
     "status": "ON",
-    "statusCode": 0,
-    "enabled": false
+    "statusCode": 1,
+    "enabled": true
 }
